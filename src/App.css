@@ -3,7 +3,7 @@
 }
 .App{
   border: solid black 3px;
-  background-image: url("images/winterBackground.png");
+ 
   width: 100vw;
   height: 100vh;
   flex-direction: inherit;
