@@ -1,0 +1,25 @@
+.Door{
+    width: 10%;
+    height: 20%;
+    border: dashed white 3px;
+    margin-right: 10px;
+    color: white;
+    text-align: center
+}
+@keyframes OpenDoor{
+    from{
+
+    };
+    to{
+
+    };
+}
+.Door.Open{
+
+}
+.Door.Locked{
+    background-color: red;
+}
+.Door.Unlocked{
+    background-color: green;
+}
