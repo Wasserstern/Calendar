@@ -1,13 +1,13 @@
 import {useState, useEffect, useRef} from "react"
 import Door from "./Door"
 import "./Calendar.css"
-export default function Calendar({doorCount, currentDate}){
+export default function Calendar({ openDoors ,doorCount, currentDate}){
 
 
     let doors = []
     for(let i = 0; i < doorCount; i++){
         doors.push(
-            <Door isLocked={!(i < 12)}></Door>
+            <Door openDoors = {openDoors} key={"DOOR" + i.toString()} index={i} isLocked={!(i < 12)} ></Door>
         )
     }
     function shuffle(array){ 
